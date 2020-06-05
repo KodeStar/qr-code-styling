@@ -53,6 +53,10 @@ export default class QRCodeStyling {
 
     this._container = container;
   }
+  
+  get(container?: HTMLElement): void {
+    return this._canvas.getCanvas()
+  }
 
   download(extension?: Extension): void {
     if (!this._canvas) return;
